@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Nerko+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>EcoRide</title>
+</head>
+<body>
+    <div id="navbar">
+        <img src="images/eco-Photoroom.png" alt="Logo" id="logo-nav">
+        <ul id="nav-menu">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="covoit.html"></a>CoVoit'</li>
+            <li><a href="contact.html"></a>Contact</li>
+            <li><a href="connexion.html"></a>Connexion</li>
+        </ul id="nav-menu">
+    </div id="navbar">
+    <div id="image-accueil">
+        <img src="images/route.jpg" alt="Photo d'une route">
+    </div>
+    <div id="itineraire">
+        <h1>Trouver mon itinéraire</h1>
+        <form id="searchForm">
+            <input type="text" id="depart" name="depart" placeholder="Adresse de départ" required>
+
+            <input type="text" id="arrivee" name="arrivee" placeholder="Adresse d'arrivée" required>
+
+            <label for="date">Veuillez choisir une date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Trouver mon convoit'</button>
+        </form>
+    </div>
+    <div id="trajetsDispos"></div>
+    <footer id="footer">
+        <div id="footer-item">
+            <a href="#">Mentions légales</a>
+        </div>
+        <div id="footer-logo">
+            <img src="images/eco-Photoroom.png" alt="Logo" id="logo-nav">
+        </div>
+        <div id="footer-item">
+            <a href="#">ecoride@covoit.com</a>
+        </div>
+    </footer>
+<script src="script.js"></script>    
+</body>
+</html>

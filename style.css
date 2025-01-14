@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "ADLaM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+#navbar {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(210, 204, 204, 0.5);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo-nav {
+    height: 150px;
+    width: auto;
+    padding: 50px;
+}
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+#nav-menu li {    
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-menu li a.active {
+    color: rgba(34, 158, 38, 1);
+}
+
+#image-accueil img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#itineraire {
+    height: 350px;
+    width: 100%;
+    margin:  20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;   
+}
+
+#itineraire form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itineraire label {
+    display: block;
+    margin: 5px;
+}
+
+#itineraire input {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: lightgray solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: black;
+}
+
+#itineraire button {
+    padding: 10px;
+    background-color: rgba(34, 158, 38, 1);
+    color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(34, 158, 38, 0.5);
+    color: black;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
