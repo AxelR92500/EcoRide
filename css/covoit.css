@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "ADLaM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#firstNavbar {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(210, 204, 204, 0.5);
+    height: 50px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#firstNavbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#firstNavbar li {
+    height: 75px;
+}
+
+#firstNavbar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+#firstNavbar a:hover{
+    background-color: #F2F7F4;
+    transition: 0.3s;
+}
+
+#firstNavbar .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menuButton {
+    display: none;
+}
+
+#logo-nav {
+    height: 150px;
+    width: auto;
+    padding: 50px;
+}
+
+.side {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.side li {    
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.side li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#firstNavbar .sidebar a {
+    padding-bottom: 15px;  
+}
+
+.sidebar li, .sidebar a {
+    width: 100%;
+}
+
+.side li a.active {
+    color: rgba(34, 158, 38, 1);
+}
+
+#itineraire {
+    height: 350px;
+    width: 100%;
+    margin:  20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;   
+}
+
+#itineraire form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itineraire label {
+    display: block;
+    margin: 5px;
+}
+
+#itineraire input {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: lightgray solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: black;
+}
+
+#itineraire button {
+    padding: 10px;
+    background-color: rgba(34, 158, 38, 1);
+    color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#recap {
+    width: 60%;
+    height: 80px;
+    display: block;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+#recap h5 {
+    font-size: 1.5rem;
+}
+
+#recap p:last-child {
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+#trajet-card {
+    background-color: lightgrey;
+    border-radius: 5px;
+    width: 85%;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#trajet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.conducteur {
+    display: flex;
+    flex-direction: row;;
+}
+
+.prenom {
+    font-size: 20px;
+    padding-right: 15px
+}
+
+.note {
+    color: green;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#trajet-prix {
+    font-size: 36px;
+    display: flex;
+    justify-content: end;
+}
+
+#trajet-infos {
+    margin: -45px 0 2px;
+}
+
+#trajet-infos p {
+    margin: 8px 0;
+    font-style: italic;
+}
+
+.trajet-eco {
+    color: green;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#trajet-boutons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: rgba(34, 158, 38, 1);
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#bouton-details {
+    background-color: lightgreen;
+    color: black;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(34, 158, 38, 0.5);
+    color: black;
+    font-size: 1.1em;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 875px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    #itineraire input {
+        width: 75%;
+    }
+}
+
+@media (max-width: 700px) {
+    #footer #footer-item {
+        font-size: 16px;
+    }
+}
